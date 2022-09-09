@@ -1,21 +1,85 @@
 * {
-    font-family: 'Anek Telugu', sans-serif;
+  font-family: 'Anek Telugu', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hermosa {
+   font-family: 'Pacifico', cursive;;
+   color: #ff6392;
+   font-weight: 600;
+   font-size: 18px;
+   position: absolute;
+   bottom: 0;
+   right: 1em;
+   
+}
+
+body {
+  background-image: url("fondo.jpg");
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1em;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #faabc2;
+  padding: 1em;
+  row-gap: 1em;
+  width: 100%;
+  position: relative;
+  min-height: 40vh;
 }
 
 li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+#btn-eliminar-tareas {
+  position: absolute;
+  top: -3em;
+  left: 1em;
+
+}
+
+.titulo {
+  font-size: 3em;
+  padding-top: 1em;
+}
+
+.escribir-tarea {
+  display: flex;
+  border-width: 4px;
+  border-color: #ff6392;
+  border-style: solid;
+  width: 20vw;
+  height: 3vw;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .tachado {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .toggler-wrapper {
@@ -53,61 +117,65 @@ li {
 }
 
 .toggler-wrapper.style-8 input[type="checkbox"]:checked+.toggler-slider {
-    background-color: #d9d9d9;
-  }
-  
-  .toggler-wrapper.style-8 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
-    left: calc(100% - 19px - 3px);
-    background: conic-gradient(#43A047, #255827);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-  
-  .toggler-wrapper.style-8 .toggler-slider {
-    background-color: #d9d9d9;
-  }
-  
-  .toggler-wrapper.style-8 .toggler-knob {
-    width: calc(25px - 6px);
-    height: calc(25px - 6px);
-    border-radius: 50%;
-    left: 3px;
-    top: 3px;
-    background: conic-gradient(#E53935, #9f1815);
-  }
+  background-color: #d9d9d9;
+}
 
-  .css-button-arrow--rose {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    overflow: hidden;
-    border-radius: 5px;
-    border: none;
-    background-color: #ff6392
-  }
-  .css-button-arrow--rose:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left:8px;
-  }
-  .css-button-arrow--rose:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
-  .css-button-arrow--rose:after {
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;
-  }
+.toggler-wrapper.style-8 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+  background: conic-gradient(#43A047, #255827);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.toggler-wrapper.style-8 .toggler-slider {
+  background-color: #d9d9d9;
+}
+
+.toggler-wrapper.style-8 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background: conic-gradient(#E53935, #9f1815);
+}
+
+.css-button-arrow--rose {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6392;
+  margin-bottom: 2em;
+}
+
+.css-button-arrow--rose:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.css-button-arrow--rose:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.css-button-arrow--rose:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}

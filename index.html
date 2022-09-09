@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="icono.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap" rel="stylesheet">
+    <link rel="icon" href="icono.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <!-- <script src="javascript.js" defer></script> -->
     <script src="script.js" defer></script>
   </head>
   <body>
     <form action="">
-      <label for="nombre">Tarea por hacer</label>
-      <input type="text" id="nombre" name="nombre" />
+      <label for="nombre" class="titulo">To Do List</label>
+      <input type="text" id="nombre" name="nombre" placeholder="¿Qué cosas tienes que hacer hoy?"/ class="escribir-tarea">
       <button type="submit" class="css-button-arrow--rose">Enviar</button>
-      <h2>❤ Tareas ❤</h2>
     </form>
     <ul>
-      <li key="item-1">
+      <!-- <li key="item-1">
         <div>
           <label class="toggler-wrapper style-8">
             <input type="checkbox" key="input-1" />
@@ -31,7 +39,11 @@
           </label>
         </div>
         <p class="badge" key="tarea-1">"Ejemplo: Cocinar muffins"</p>
-      </li>
+      </li> -->
+      <button class="css-button-arrow--rose" id="btn-eliminar-tareas">
+        Eliminar tareas hechas
+      </button>
+      <p class="hermosa">Paula Mancino</p>
     </ul>
   </body>
 </html>
